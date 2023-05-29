@@ -15,22 +15,22 @@
 
 <div style="line-height: 1.15">
     <b>🐦 Flappy Bird Game</b>
-    <p>Unity Engine</p>
+    <p>Unity Engine is used to buil this game</p>
 </div>
     
 <div style="line-height: 1.15">
     <b>🤟 Gesture Decode System - GDS</b>
-    <p>Translating Sign language to text, PSL is used to train this model</p>
+    <p>Translating Sign language to text, PSL is used to train this model. Tesorflow, Keras, opencv, Scikit-learn, Matplotlib, Pandas, NumPy, LSTM & Dense Neural Network are used</p>
 </div>
 
 <div style="line-height: 1.15">
     <b>🩸 Blood Bank Managment System</b>
-    <p>MERN Stack used, for frontend bootstrap used, authentication done using JWT Token, Cookies used for auto-login, MVC Architecture followed</p>
+    <p>MERN Stack is used, for frontend bootstrap used, authentication done using JWT Token, Cookies used for auto-login, MVC Architecture followed</p>
 </div>
 
 <div style="line-height: 1.15">
     <b>✈️ Airline Ticket Booking System</b>
-    <p>g ASP.NET is used. It offers users a well-organized system for purchasing tickets, so they can do so from the comfort of their own homes. It is done in HTML,CSS,JavaScript,C# and MySQL</p>
+    <p>ASP.NET is used. It offers users a well-organized system for purchasing tickets, so they can do so from the comfort of their own homes. It is done in HTML,CSS,JavaScript,C# and MySQL</p>
 </div>
     
 ## 💻 Technical Skills
