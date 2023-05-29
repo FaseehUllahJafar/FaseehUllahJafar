@@ -38,6 +38,8 @@
 - Web & Game Development.
 
 - AI/ML Model Development.
+    
+- Data Scrapping & Automation.
 
 <h2 align="left">🌐 How to connect?</h2>
 <p align="left">
