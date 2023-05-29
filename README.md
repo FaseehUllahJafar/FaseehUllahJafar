@@ -1,6 +1,6 @@
 <a href="https://github.com/faseehullahjafar"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=faseehullahjafar&style=flat-square" width="125"/></a>
 
-<h1 align="left">Hey there, I'm <a href="https://www.linkedin.com/in/faseehullahjafar/">Faseeh Ullah Jafar</a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50">
+<h1 align="left">Hey there, I'm <a href="https://www.linkedin.com/in/faseeh-ullah-jafar-6a7518239/">Faseeh Ullah Jafar</a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50">
 
 #### I am a computer science student and a self-employed software developer residing in Pakistan.
 
