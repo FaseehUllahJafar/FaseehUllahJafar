@@ -15,8 +15,8 @@
 ## 🧑🏽‍💻 What am I doing?
 
 <div style="line-height: 1.15">
-    <b>📚 National University of Computer and Emerging Sciences</b>
-    <p>BS (Computer Science)</p>
+    <b>📚 Devsinc</b>
+    <p>Software Engineer</p>
 </div>
 
 ## 🕰 What have I done?
