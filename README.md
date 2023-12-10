@@ -54,6 +54,7 @@
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fashne738@gmail.com"><img title="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/faseeh-ullah-jafar-6a7518239/"><img title="Follow on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/FaseehUllahJafar"><img title="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://www.fiverr.com/samee666"><img alt="Fiverr" src="https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white"></a>
   <a href="https://www.upwork.com/freelancers/~019fbf462699bf6244"><img title="Upwork" src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white"/></a>
   <a href="https://www.freelancer.com/u/fashne"><img title="Freelancer" src="https://img.shields.io/badge/Freelancer-29b6f6?style=for-the-badge&logo=freelancer&logoColor=white"/></a>
 </p>
