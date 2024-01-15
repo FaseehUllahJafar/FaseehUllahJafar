@@ -4,8 +4,8 @@
 <p> I have my bachelor's from the National University of Computer and Emerging Sciences in Computer Sciences. I am experienced in website development, AI/ML Model Development and Training, Web Scraping and Automation. I have also some experience in Game development and Mobile app development. The Technologies I have exeperince in are: </p>
 <ui>
     <li>Angular</li>
-    <li>.NET, .NET Web API, MVC etc.</li>
-    <li>MySQL.</li>
+    <li>.NET Core, .NET Web API, MVC etc.</li>
+    <li>SQL Server.</li>
     <li>Selenium, Beatiful Soup, Scrapy, Nightwatch JS etc.</li>
     <li>Unity.</li>
     <li>Tensorflow, OpenCV, Keras, Media Pipes, LSTM, and dense layers of neural networks.</li>
