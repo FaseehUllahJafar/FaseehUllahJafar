@@ -7,16 +7,16 @@
 
 <div style="line-height: 1.15">
     <b>📚 Horizon IT Solutions</b>
-    <p>Senior Software Engineer — leading a 5-person cross-functional team building a .NET 8 enterprise billing & approval platform for a US client, with Azure OpenAI document processing and event-driven workflows on Azure Service Bus.</p>
+    <p>Senior Software Engineer — leading a 5-person cross-functional team on an <b>Enterprise Billing & Approval Platform</b> (.NET 8, Azure OpenAI, event-driven workflows on Azure Service Bus).</p>
 </div>
 
 ## 📈 Highlights
 
-- Cut a billing dashboard's worst-case load from 3+ minutes to 40 seconds on large aggregated datasets (78% reduction)
-- Took the worst screen in a healthcare platform from 4 seconds to 300ms via Redis caching and query tuning
+- **Enterprise Billing & Approval Platform:** cut worst-case dashboard load from 3+ minutes to 40 seconds on large aggregated datasets (78% reduction)
+- **Healthcare EMR Integration Platform:** integrated 4 major EMR systems (Redox, Athena, Epic, eCW), securing PHI end to end
+- **Healthcare EMR Integration Platform:** took the worst screen from 4 seconds to 300ms via Redis caching and query tuning
+- **Fintech Platform Migration:** served as Backend Tech Lead for a 12-person cross-functional team migrating a legacy Java platform to .NET 8 + React
 - Cut mean CI/CD build-and-deploy time from 27 to 15 minutes through Azure DevOps pipeline modernization
-- Served as Backend Tech Lead for a 12-person cross-functional team migrating a legacy Java platform to .NET 8 + React
-- Integrated 4 major EMR systems (Redox, Athena, Epic, eCW) for a healthcare client, securing PHI end to end
 - Write a Saga pattern series on LinkedIn — compensating transactions, idempotency, and production failure modes
 
 ## 💻 Tech Stack
@@ -46,7 +46,7 @@
 
 ## 🚀 Featured Projects
 
-Public, source-readable side projects — the client and employer work sits under NDA and lives on the [portfolio](https://faseehullahjafar.vercel.app) instead, with full case studies.
+Personal projects — public, source-readable, built end to end. More on the [portfolio](https://faseehullahjafar.vercel.app).
 
 | Project | What it is |
 |---|---|
