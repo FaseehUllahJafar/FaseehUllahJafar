@@ -1,23 +1,34 @@
 
 <h1 align="left">Hey there, I'm <a href="https://linkedin.com/in/faseeh-ullah-jafar">Faseeh Ullah Jafar</a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50"></h1>
 
-<p>Senior Full-Stack Software Engineer (AI-Integrated) — .NET · Azure · Angular / React. 5+ years building and rescuing distributed .NET systems for US and EU teams in healthcare, fintech, and retail. Backend tech lead for delivery teams up to 12 people, with AI integration through Azure OpenAI (document summarization, structured extraction, prompt engineering) built on Clean Architecture, event-driven microservices, and the Saga pattern.</p>
+<p>Senior .NET Engineer — ASP.NET Core · Azure · SQL Server · Angular / React. I rescue distributed .NET systems that outgrew their architecture: the services, the front end, and the pipeline that ships them. Performance recovery, legacy migration and event-driven design, mostly in healthcare and fintech.</p>
 
-## 🧑🏽‍💻 What am I doing?
+## 🧑🏽‍💻 What I work on
 
-<div style="line-height: 1.15">
-    <b>📚 Horizon IT Solutions</b>
-    <p>Senior Software Engineer — leading a 5-person cross-functional team on an <b>Enterprise Billing & Approval Platform</b> (.NET 8, Azure OpenAI, event-driven workflows on Azure Service Bus).</p>
-</div>
+Systems that already exist and have started to hurt. The work repeats itself across domains: services that grew up depending on each other in fragile ways, queries nobody noticed getting slow until they were thirty seconds slow, and codebases where every decision has a reason nobody can name any more.
 
-## 📈 Highlights
+- **Performance recovery** — execution-plan analysis, index design, and knowing when caching is the wrong answer because it only moves the cost
+- **Legacy migration** — pulling monoliths apart into services that can deploy independently, without stopping delivery while it happens
+- **Event-driven design** — Azure Service Bus and RabbitMQ / MassTransit, Saga with compensating transactions, idempotency, and the failure modes that only show up in production at 3am
+- **AI integration** — Azure OpenAI for document summarization and structured extraction, with prompt templating, output validation and token-cost controls
 
-- **Enterprise Billing & Approval Platform:** cut worst-case dashboard load from 3+ minutes to 40 seconds on large aggregated datasets (78% reduction)
-- **Healthcare EMR Integration Platform:** integrated 4 major EMR systems (Redox, Athena, Epic, eCW), securing PHI end to end
-- **Healthcare EMR Integration Platform:** took the worst screen from 4 seconds to 300ms via Redis caching and query tuning
-- **Fintech Platform Migration:** served as Backend Tech Lead for a 12-person cross-functional team migrating a legacy Java platform to .NET 8 + React
-- Cut mean CI/CD build-and-deploy time from 27 to 15 minutes through Azure DevOps pipeline modernization
-- Write a Saga pattern series on LinkedIn — compensating transactions, idempotency, and production failure modes
+Most of my professional work is under NDA, so it lives on the [portfolio](https://faseehullahjafar.vercel.app) as architecture and outcomes rather than source. The repos below are the ones you can actually read.
+
+## 🚀 Projects
+
+Public, source-readable, built end to end.
+
+| Project | What it is |
+|---|---|
+| [MarketNest](https://github.com/FaseehUllahJafar/MarketNest) | Multi-vendor marketplace on .NET 10 / EF Core 9 — CQRS via MediatR, Stripe Connect payment splits |
+| [DocMind](https://github.com/FaseehUllahJafar/DocMind) | RAG document chat with source citations — FastAPI RAG core, Node gateway, React client, pgvector |
+| [PatientInsight](https://github.com/FaseehUllahJafar/PatientInsight) | Clean Architecture patient management — MassTransit + RabbitMQ, Angular 17 with Signals |
+| [TaskFlow](https://github.com/FaseehUllahJafar/TaskFlow) | Multi-tenant project management with real-time Kanban over Socket.io |
+| [Gesture Decode System](https://github.com/FaseehUllahJafar/GDS---Gesture-Decode-System) | Pakistan Sign Language → text — MediaPipe keypoints into an LSTM network |
+
+## ✍️ Writing
+
+A [Saga pattern series](https://www.linkedin.com/in/faseeh-ullah-jafar/recent-activity/all/) on LinkedIn — the honest version, covering compensating transactions, idempotency, and the failure modes that only show up under real load.
 
 ## 💻 Tech Stack
 
@@ -34,27 +45,14 @@
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
 </p>
 
-- **Backend & Cloud:** C# / .NET 8+, ASP.NET Core, EF Core, Dapper, Azure (App Service, Functions, Service Bus, Key Vault, AD B2C)
-- **AI Integration:** Azure OpenAI, LLM API integration, RAG concepts, prompt engineering, output validation
-- **Frontend:** Angular 12–17, React 18, TypeScript, RxJS, NgRx, Redux Toolkit
+- **Daily:** C# / .NET 10–8, ASP.NET Core, EF Core, SQL Server / T-SQL, Redis, Azure (App Service, Functions, Service Bus, Key Vault, AD B2C), Azure DevOps, Angular 12–17, React 18, TypeScript, xUnit, Jest
 - **Architecture:** Microservices, Clean Architecture, CQRS (MediatR), DDD, Saga (choreography & orchestration), event-driven design
-- **Data & Messaging:** SQL Server, PostgreSQL, MongoDB, Redis, RabbitMQ / MassTransit, Kafka, Elasticsearch
-- **DevOps & Quality:** Docker, Kubernetes, Azure DevOps, GitHub Actions, CI/CD, xUnit, Jest, TDD/BDD
+- **AI integration:** Azure OpenAI, LLM API integration, RAG, embeddings & vector search, prompt engineering, output validation
+- **Also shipped with:** PostgreSQL, MongoDB, RabbitMQ / MassTransit, Elasticsearch, Dapper, Blazor, SignalR, Node.js, Express, Python, FastAPI, Docker, Dynatrace, SolarWinds DPA
 
-## 🚀 Featured Projects
-
-Personal projects — public, source-readable, built end to end. More on the [portfolio](https://faseehullahjafar.vercel.app).
-
-| Project | What it is |
-|---|---|
-| [MarketNest](https://github.com/FaseehUllahJafar/MarketNest) | Multi-vendor marketplace on .NET 10 / EF Core 9 — CQRS via MediatR, Stripe Connect payment splits |
-| [DocMind](https://github.com/FaseehUllahJafar/DocMind) | RAG document chat with source citations — FastAPI RAG core, Node gateway, React client, pgvector |
-| [PatientInsight](https://github.com/FaseehUllahJafar/PatientInsight) | Clean Architecture patient management — MassTransit + RabbitMQ, Angular 17 with Signals |
-| [Gesture Decode System](https://github.com/FaseehUllahJafar/GDS---Gesture-Decode-System) | Pakistan Sign Language → text — MediaPipe keypoints into an LSTM network |
-| [TaskFlow](https://github.com/FaseehUllahJafar/TaskFlow) | Multi-tenant project management with real-time Kanban over Socket.io |
+Depth is tiered honestly on the [portfolio's stack index](https://faseehullahjafar.vercel.app/#stack) — daily, shipped with, familiar — rather than listed flat.
 
 ## 🌐 How to connect?
 
@@ -65,4 +63,4 @@ Personal projects — public, source-readable, built end to end. More on the [po
   <a href="https://github.com/FaseehUllahJafar"><img title="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
-Open to senior backend / full-stack roles — remote, or relocating to the UK, EU, or Gulf.
+Open to senior .NET roles. Remote contract (W-8BEN) or EOR needs no visa, no sponsor licence and no lead time; also open to full-time, and to relocating to the UK, EU or Gulf. Based in Lahore, on US Eastern hours.
