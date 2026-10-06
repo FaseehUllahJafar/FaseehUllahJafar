@@ -1,66 +1,39 @@
+# Faseeh Ullah Jafar
 
-<h1 align="left">Hey there, I'm <a href="https://linkedin.com/in/faseeh-ullah-jafar">Faseeh Ullah Jafar</a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50"></h1>
+Senior .NET engineer with six years on ASP.NET Core, SQL Server and Azure, and Angular or React on the front end. I'm a Senior Software Engineer at Horizon IT Solutions. Before that I was at Devsinc and Zentech Solutions. Most of my work has been fixing performance on live systems and moving older .NET code onto services that can deploy independently.
 
-<p>Senior .NET Engineer — ASP.NET Core · Azure · SQL Server · Angular / React. I rescue distributed .NET systems that outgrew their architecture: the services, the front end, and the pipeline that ships them. Performance recovery, legacy migration and event-driven design, mostly in healthcare and fintech.</p>
+## Work
 
-## 🧑🏽‍💻 What I work on
+**Horizon IT Solutions** (2025–now), billing and invoicing for a US retail group
 
-Systems that already exist and have started to hurt. The work repeats itself across domains: services that grew up depending on each other in fragile ways, queries nobody noticed getting slow until they were thirty seconds slow, and codebases where every decision has a reason nobody can name any more.
+- During an outage, cut the worst-case billing run from over 3 minutes to 40 seconds. The cause was missing indexes on hot tables and a stored procedure whose plan regressed once the table passed 4.2 million rows.
+- Shipped the platform's first Azure OpenAI feature, which summarises documents and extracts fields from them. Responses are schema-validated before they're saved, and each document type has its own token budget.
+- Cut build-and-deploy time from 27 to 15 minutes by rebuilding the Azure DevOps pipelines.
 
-- **Performance recovery** — execution-plan analysis, index design, and knowing when caching is the wrong answer because it only moves the cost
-- **Legacy migration** — pulling monoliths apart into services that can deploy independently, without stopping delivery while it happens
-- **Event-driven design** — Azure Service Bus and RabbitMQ / MassTransit, Saga with compensating transactions, idempotency, and the failure modes that only show up in production at 3am
-- **AI integration** — Azure OpenAI for document summarization and structured extraction, with prompt templating, output validation and token-cost controls
+**Devsinc** (2023–2025), healthcare and fintech clients
 
-Most of my professional work is under NDA, so it lives on the [portfolio](https://faseehullahjafar.vercel.app) as architecture and outcomes rather than source. The repos below are the ones you can actually read.
+- For a US healthcare client, cut a clinical worklist from 4 seconds to 300 ms for 120 concurrent providers, using Redis caching, server-side paging and query rewrites based on the execution plans. I also put four EMR systems (Redox, Athena, Epic, eCW) behind one gateway, with the HIPAA-protected data behind role-based access.
+- At Dev Vaults (fintech), led the backend move from legacy Java to .NET 8 with CQRS, DDD and Saga orchestration. Our tests mocked the message broker, so they passed while production failed. I moved them onto a real broker under Testcontainers.
+- Split a .NET monolith into four independently deployable services, and moved the slow cross-service calls onto AWS SQS.
 
-## 🚀 Projects
+## Projects
 
-Public, source-readable, built end to end.
-
-| Project | What it is |
+| Project | |
 |---|---|
-| [MarketNest](https://github.com/FaseehUllahJafar/MarketNest) | Multi-vendor marketplace on .NET 10 / EF Core 9 — CQRS via MediatR, Stripe Connect payment splits |
-| [DocMind](https://github.com/FaseehUllahJafar/DocMind) | RAG document chat with source citations — FastAPI RAG core, Node gateway, React client, pgvector |
-| [PatientInsight](https://github.com/FaseehUllahJafar/PatientInsight) | Clean Architecture patient management — MassTransit + RabbitMQ, Angular 17 with Signals |
-| [TaskFlow](https://github.com/FaseehUllahJafar/TaskFlow) | Multi-tenant project management with real-time Kanban over Socket.io |
-| [Gesture Decode System](https://github.com/FaseehUllahJafar/GDS---Gesture-Decode-System) | Pakistan Sign Language → text — MediaPipe keypoints into an LSTM network |
+| [saga-in-production](https://github.com/FaseehUllahJafar/saga-in-production) | A checkout saga in .NET 10 with six services, Wolverine and RabbitMQ, and a SQL Server database per service. Each failure case has an integration test against real containers: a lost payment response, a timeout where you don't know whether the step ran, a compensation that arrives before its command, and a saga that stops without an error. |
+| [InstructorSharp](https://github.com/FaseehUllahJafar/InstructorSharp) | A C# port of the Instructor library. It returns typed objects from an LLM and retries with the validation errors when the output doesn't validate. Source only for now, not yet on NuGet. |
+| [dotnet-firefighting-skills](https://github.com/FaseehUllahJafar/dotnet-firefighting-skills) | Runbooks for ten common .NET production problems, including thread-pool starvation, connection-pool exhaustion, EF Core N+1 queries and SQL Server plan regressions. They're written as Agent Skills, so a coding agent can follow them during an incident. |
 
-## ✍️ Writing
+I'm also writing a [series on sagas](https://www.linkedin.com/in/faseeh-ullah-jafar/recent-activity/all/) on LinkedIn, and saga-in-production is the code that goes with it.
 
-A [Saga pattern series](https://www.linkedin.com/in/faseeh-ullah-jafar/recent-activity/all/) on LinkedIn — the honest version, covering compensating transactions, idempotency, and the failure modes that only show up under real load.
+## Stack
 
-## 💻 Tech Stack
+- **Daily:** C#, .NET 10 and 8, ASP.NET Core, EF Core, SQL Server / T-SQL, Redis, Azure (App Service, Functions, Service Bus, Key Vault, AD B2C), Azure DevOps, Angular, React, TypeScript, xUnit
+- **Architecture:** microservices, Clean Architecture, CQRS, DDD, sagas, event-driven design
+- **Also used:** PostgreSQL, RabbitMQ / MassTransit, AWS, Docker, Kubernetes, Azure OpenAI, Python, Node.js
 
-<p>
-<img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
-<img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
-<img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
-<img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white"/>
-<img src="https://img.shields.io/badge/Azure_OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
-<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-</p>
+## Contact
 
-- **Daily:** C# / .NET 10–8, ASP.NET Core, EF Core, SQL Server / T-SQL, Redis, Azure (App Service, Functions, Service Bus, Key Vault, AD B2C), Azure DevOps, Angular 12–17, React 18, TypeScript, xUnit, Jest
-- **Architecture:** Microservices, Clean Architecture, CQRS (MediatR), DDD, Saga (choreography & orchestration), event-driven design
-- **AI integration:** Azure OpenAI, LLM API integration, RAG, embeddings & vector search, prompt engineering, output validation
-- **Also shipped with:** PostgreSQL, MongoDB, RabbitMQ / MassTransit, Elasticsearch, Dapper, Blazor, SignalR, Node.js, Express, Python, FastAPI, Docker, Dynatrace, SolarWinds DPA
+[Portfolio](https://faseehullahjafar.vercel.app) · [LinkedIn](https://linkedin.com/in/faseeh-ullah-jafar) · faseehullahdev@gmail.com
 
-Depth is tiered honestly on the [portfolio's stack index](https://faseehullahjafar.vercel.app/#stack) — daily, shipped with, familiar — rather than listed flat.
-
-## 🌐 How to connect?
-
-<p align="left">
-<a href="https://faseehullahjafar.vercel.app"><img title="Portfolio" src="https://img.shields.io/badge/Portfolio-6244C5?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faseehullahdev@gmail.com"><img title="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/faseeh-ullah-jafar"><img title="Follow on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/FaseehUllahJafar"><img title="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-</p>
-
-Open to senior .NET roles. Remote contract (W-8BEN) or EOR needs no visa, no sponsor licence and no lead time; also open to full-time, and to relocating to the UK, EU or Gulf. Based in Lahore, on US Eastern hours.
+Open to senior .NET roles. I can start on a remote contract or EOR without needing a visa, or relocate to the UK, EU or Gulf. My notice period is 14 days. I'm based in Lahore and currently work US hours.
