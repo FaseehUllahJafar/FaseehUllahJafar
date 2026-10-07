@@ -1,39 +1,31 @@
 # Faseeh Ullah Jafar
 
-Senior .NET engineer with six years on ASP.NET Core, SQL Server and Azure, and Angular or React on the front end. I'm a Senior Software Engineer at Horizon IT Solutions. Before that I was at Devsinc and Zentech Solutions. Most of my work has been fixing performance on live systems and moving older .NET code onto services that can deploy independently.
+Senior .NET engineer, based in Lahore. I've spent six years on C# and SQL Server backends, the last three on US teams working US hours. I'm open to senior .NET roles, either as a remote contractor or Employer of Record (EOR) hire for a US or EU company, or relocating with sponsorship to the UK, EU or Gulf. My notice period is 14 days.
 
-## Work
+Most of my work is in private client codebases, usually on systems that are already live and have outgrown their original design:
 
-**Horizon IT Solutions** (2025–now), billing and invoicing for a US retail group
+- On a billing platform for a US retail group, worst-case invoice generation took over 3 minutes. During the outage I traced it to unindexed hot tables and a stored procedure whose plan collapsed past 4.2 million rows. Emergency indexing got it down to 40 seconds.
+- A clinical worklist for a US healthcare client went from 4 seconds to 300 ms with 120 providers using it at once. That came from Redis caching, server-side paging and query rewrites based on the execution plans.
+- At Dev Vaults, a fintech platform, I led the backend move from legacy Java to .NET 8, with CQRS, saga orchestration and idempotent command handlers. Our tests were passing against a mocked broker while production failed, so I moved them onto a real broker under Testcontainers.
 
-- During an outage, cut the worst-case billing run from over 3 minutes to 40 seconds. The cause was missing indexes on hot tables and a stored procedure whose plan regressed once the table passed 4.2 million rows.
-- Shipped the platform's first Azure OpenAI feature, which summarises documents and extracts fields from them. Responses are schema-validated before they're saved, and each document type has its own token budget.
-- Cut build-and-deploy time from 27 to 15 minutes by rebuilding the Azure DevOps pipelines.
+## Public code
 
-**Devsinc** (2023–2025), healthcare and fintech clients
+**[saga-in-production](https://github.com/FaseehUllahJafar/saga-in-production)**
 
-- For a US healthcare client, cut a clinical worklist from 4 seconds to 300 ms for 120 concurrent providers, using Redis caching, server-side paging and query rewrites based on the execution plans. I also put four EMR systems (Redox, Athena, Epic, eCW) behind one gateway, with the HIPAA-protected data behind role-based access.
-- At Dev Vaults (fintech), led the backend move from legacy Java to .NET 8 with CQRS, DDD and Saga orchestration. Our tests mocked the message broker, so they passed while production failed. I moved them onto a real broker under Testcontainers.
-- Split a .NET monolith into four independently deployable services, and moved the slow cross-service calls onto AWS SQS.
+A checkout saga across six .NET 10 services, using Wolverine and RabbitMQ, with a SQL Server database for each service. It's built for the failures tutorials skip: a payment response lost after the charge went through, a timeout that doesn't tell you whether the step ran, a compensation that overtakes its own command. It has 75 tests covering fault injection with Toxiproxy, crash recovery, concurrency and idempotency, plus choreography and not-a-saga versions for comparison. It's the companion code for my [saga series on LinkedIn](https://www.linkedin.com/in/faseeh-ullah-jafar/recent-activity/all/).
 
-## Projects
+**[InstructorSharp](https://github.com/FaseehUllahJafar/InstructorSharp)**
 
-| Project | |
-|---|---|
-| [saga-in-production](https://github.com/FaseehUllahJafar/saga-in-production) | A checkout saga in .NET 10 with six services, Wolverine and RabbitMQ, and a SQL Server database per service. Each failure case has an integration test against real containers: a lost payment response, a timeout where you don't know whether the step ran, a compensation that arrives before its command, and a saga that stops without an error. |
-| [InstructorSharp](https://github.com/FaseehUllahJafar/InstructorSharp) | A C# port of the Instructor library. It returns typed objects from an LLM and retries with the validation errors when the output doesn't validate. Source only for now, not yet on NuGet. |
-| [dotnet-firefighting-skills](https://github.com/FaseehUllahJafar/dotnet-firefighting-skills) | Runbooks for ten common .NET production problems, including thread-pool starvation, connection-pool exhaustion, EF Core N+1 queries and SQL Server plan regressions. They're written as Agent Skills, so a coding agent can follow them during an incident. |
+Gets typed, validated objects out of an LLM in C#. When a response fails validation, the library sends the errors back to the model and retries. It's built on `IChatClient` from Microsoft.Extensions.AI, with strategies for each provider and support for streaming partial JSON. 145 tests pass on .NET 10, .NET 8 and .NET Framework 4.7.2. Not on NuGet yet.
 
-I'm also writing a [series on sagas](https://www.linkedin.com/in/faseeh-ullah-jafar/recent-activity/all/) on LinkedIn, and saga-in-production is the code that goes with it.
+**[dotnet-firefighting-skills](https://github.com/FaseehUllahJafar/dotnet-firefighting-skills)**
+
+Ten runbooks for .NET production incidents, including thread-pool starvation, connection-pool exhaustion, EF Core N+1 queries, cache stampedes and SQL Server plan regressions. Each one shows how to prove the cause before you change anything, orders the fixes by risk, and says what the fix breaks. They're packaged as Agent Skills for Claude Code, Copilot or Cursor.
 
 ## Stack
 
-- **Daily:** C#, .NET 10 and 8, ASP.NET Core, EF Core, SQL Server / T-SQL, Redis, Azure (App Service, Functions, Service Bus, Key Vault, AD B2C), Azure DevOps, Angular, React, TypeScript, xUnit
-- **Architecture:** microservices, Clean Architecture, CQRS, DDD, sagas, event-driven design
-- **Also used:** PostgreSQL, RabbitMQ / MassTransit, AWS, Docker, Kubernetes, Azure OpenAI, Python, Node.js
+C#, .NET 10 and 8, ASP.NET Core, EF Core, SQL Server, Azure (Service Bus, Functions, App Service, Key Vault), Redis, RabbitMQ, Docker, Azure DevOps, Angular, React, TypeScript
 
 ## Contact
 
-[Portfolio](https://faseehullahjafar.vercel.app) · [LinkedIn](https://linkedin.com/in/faseeh-ullah-jafar) · faseehullahdev@gmail.com
-
-Open to senior .NET roles. I can start on a remote contract or EOR without needing a visa, or relocate to the UK, EU or Gulf. My notice period is 14 days. I'm based in Lahore and currently work US hours.
+faseehullahdev@gmail.com · [LinkedIn](https://linkedin.com/in/faseeh-ullah-jafar) · [Portfolio](https://faseehullahjafar.vercel.app)
