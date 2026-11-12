@@ -16,7 +16,7 @@ A checkout saga across six .NET 10 services, using Wolverine and RabbitMQ, with 
 
 **[InstructorSharp](https://github.com/FaseehUllahJafar/InstructorSharp)**
 
-Gets typed, validated objects out of an LLM in C#. When a response fails validation, the library sends the errors back to the model and retries. It's built on `IChatClient` from Microsoft.Extensions.AI, with strategies for each provider and support for streaming partial JSON. 145 tests pass on .NET 10, .NET 8 and .NET Framework 4.7.2. Not on NuGet yet.
+Gets typed, validated objects out of an LLM in C#. When a response fails validation, the library sends the errors back to the model and retries. It's built on `IChatClient` from Microsoft.Extensions.AI, with strategies for each provider and support for streaming partial JSON. 145 tests pass on .NET 10, .NET 8 and .NET Framework 4.7.2. On NuGet as [`InstructorSharp`](https://www.nuget.org/packages/InstructorSharp) and [`InstructorSharp.FluentValidation`](https://www.nuget.org/packages/InstructorSharp.FluentValidation).
 
 **[dotnet-firefighting-skills](https://github.com/FaseehUllahJafar/dotnet-firefighting-skills)**
 
